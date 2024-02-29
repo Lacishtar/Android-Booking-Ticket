@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".admin.MoviesListActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarmovieslist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/main_color"
+        app:navigationIcon="@drawable/ic_arrow_back_white"
+        app:title="MOVIE LIST"
+        app:titleTextColor="@color/white">
+
+        <ImageButton
+            android:id="@+id/imgbt_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginEnd="10dp"
+            android:background="@null"
+            android:contentDescription="@string/app_name"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            android:onClick="addbook"
+            android:src="@drawable/ic_daucong" />
+    </androidx.appcompat.widget.Toolbar>
+    <ListView
+        android:layout_marginTop="5dp"
+        android:id="@+id/lvmovieslist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

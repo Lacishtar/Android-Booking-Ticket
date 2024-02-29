@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_marginBottom="7dp"
+    android:background="@drawable/border_bottom"
+    android:padding="5dp"
+    android:layout_height="100dp">
+
+    <ImageView
+        android:id="@+id/imageViewcl"
+        android:layout_width="100dp"
+        android:layout_height="90dp"
+        android:src="@drawable/bg"
+        android:scaleType="centerCrop"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/tv_namecl"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:maxHeight="70dp"
+            android:text="Movie Name"
+            android:textColor="@color/black"
+            android:textSize="20dp"/>
+        <TextView
+            android:id="@+id/tv_pricecl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date Release"
+            android:textColor="@color/red"
+            android:textStyle="bold"
+            android:textSize="17dp" />
+    </LinearLayout>
+
+</LinearLayout>

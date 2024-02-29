@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/share_item"
+        android:icon="@drawable/baseline_share_24"
+        android:title="Shopping Cart"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/accout_item"
+        android:icon="@drawable/ic_accout"
+        android:title="Accout"
+        app:showAsAction="ifRoom" />
+</menu>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.HistoryOrderActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarhistoryorder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/main_color"
+        app:navigationIcon="@drawable/ic_arrow_back_white"
+        app:title="HISTORY"
+        app:titleTextColor="@color/white"></androidx.appcompat.widget.Toolbar>
+
+    <ListView
+        android:id="@+id/lvhistoryorder"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

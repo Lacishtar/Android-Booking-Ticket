@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="400dp"
+             android:layout_height="match_parent">
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="400dp"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:padding="7dp"
+        android:text="Tên Sách:" />
+
+    <EditText
+        android:id="@+id/edt_movie_name"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:layout_margin="5dp"
+        android:background="@drawable/border_edt"
+        android:hint="Nhập tên sách"
+        android:minHeight="48dp"
+        android:padding="9dp"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:padding="7dp"
+        android:text="Giá Sách:" />
+
+    <EditText
+        android:id="@+id/edt_movie_price"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/border_edt"
+        android:hint="Nhập giá sách"
+        android:minHeight="48dp"
+        android:padding="9dp"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:padding="7dp"
+        android:text="Tác giá:" />
+
+    <EditText
+        android:id="@+id/edt_movie_author"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/border_edt"
+        android:hint="Nhập tác giả"
+        android:minHeight="48dp"
+        android:padding="9dp"
+        android:textSize="20dp" />
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="7dp"
+        android:text="Thể loại:"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
+    <Spinner
+        android:id="@+id/spinner_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:contentDescription="@string/app_name"
+        android:minHeight="48dp" />
+
+    <TextView
+        android:id="@+id/textView_time_slot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:padding="7dp"
+        android:text="Chọn khung giờ:" />
+
+    <!-- Time Slot Options -->
+    <CheckBox
+        android:id="@+id/checkBox_9am"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="9:00 AM" />
+
+    <CheckBox
+        android:id="@+id/checkBox_12pm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="12:00 PM" />
+
+    <CheckBox
+        android:id="@+id/checkBox_3pm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3:00 PM" />
+
+    <CheckBox
+        android:id="@+id/checkBox_7pm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="7:00 PM" />
+
+    <CheckBox
+        android:id="@+id/checkBox_9pm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="9:00 PM" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:padding="7dp"
+        android:text="Image 1:" />
+
+    <EditText
+        android:id="@+id/imgMovie1"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/border_edt"
+        android:hint="Nhập Image 1"
+        android:minHeight="48dp"
+        android:padding="9dp"
+        android:textSize="20dp" />
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:padding="7dp"
+        android:text="Image 2:" />
+
+    <EditText
+        android:id="@+id/imgMovie2"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/border_edt"
+        android:hint="Nhập Image 2"
+        android:minHeight="48dp"
+        android:padding="9dp"
+        android:textSize="20dp" />
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:padding="7dp"
+        android:text="Image 3:" />
+
+    <EditText
+        android:id="@+id/imgMovie3"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/border_edt"
+        android:hint="Nhập Image 3"
+        android:minHeight="48dp"
+        android:padding="9dp"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:padding="7dp"
+        android:text="Mô tả:" />
+
+    <EditText
+        android:id="@+id/edt_movie_description"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/border_edt"
+        android:hint="Nhập mô tả"
+        android:minHeight="48dp"
+        android:padding="9dp"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/textView_trailer_link"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:padding="7dp"
+        android:text="Link Trailer:" />
+
+    <EditText
+        android:id="@+id/edt_trailer_link"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/border_edt"
+        android:hint="Nhập link trailer"
+        android:singleLine="true"
+        android:minHeight="48dp"
+        android:padding="9dp" />
+
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btnsave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Lưu"/>
+        <Button
+            android:id="@+id/btncancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Hủy"/>
+    </LinearLayout>
+</LinearLayout>
+</ScrollView>

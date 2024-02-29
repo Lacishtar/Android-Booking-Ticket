@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.InfoUserActivity"
+    android:background="@color/grey">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarinforuser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/main_color"
+        app:navigationIcon="@drawable/ic_arrow_back_white"
+        app:title="@string/user_info"
+        app:titleTextColor="@color/white"></androidx.appcompat.widget.Toolbar>
+    <LinearLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Hello"
+            android:textColor="@color/red"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="5dp"
+            android:text="USERNAME"
+            android:textColor="@color/red"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_infoaccount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="7dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="7dp"
+            android:background="@drawable/border_textview"
+            android:drawableLeft="@drawable/ic_profile"
+            android:drawableRight="@drawable/ic_arrow_fright_black"
+            android:drawablePadding="10dp"
+            android:minHeight="48dp"
+            android:onClick="inforaccount"
+            android:paddingVertical="7dp"
+            android:paddingStart="40dp"
+            android:paddingEnd="35dp"
+            android:text="@string/user_info"
+            android:textColor="@color/black"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/tv_historyorder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="7dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="7dp"
+            android:background="@drawable/border_textview"
+            android:drawableLeft="@drawable/ic_lichsu"
+            android:drawableRight="@drawable/ic_arrow_fright_black"
+            android:drawablePadding="10dp"
+            android:minHeight="48dp"
+            android:onClick="historyorder"
+            android:paddingVertical="7dp"
+            android:paddingStart="40dp"
+            android:paddingEnd="35dp"
+            android:text="@string/history"
+            android:textColor="@color/black"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/tv_sanphamuuthich"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="7dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="7dp"
+            android:background="@drawable/border_textview"
+            android:drawableLeft="@drawable/ic_tim"
+            android:drawableRight="@drawable/ic_arrow_fright_black"
+            android:drawablePadding="10dp"
+            android:paddingVertical="7dp"
+            android:paddingStart="40dp"
+            android:paddingEnd="35dp"
+            android:text="@string/fav"
+            android:textColor="@color/black"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/tv_khthanthiet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="7dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="7dp"
+            android:background="@drawable/border_textview"
+            android:drawableLeft="@drawable/ic_diamond"
+            android:drawableRight="@drawable/ic_arrow_fright_black"
+            android:drawablePadding="10dp"
+            android:paddingVertical="7dp"
+            android:paddingStart="40dp"
+            android:paddingEnd="35dp"
+            android:text="@string/vip"
+            android:textColor="@color/black"
+            android:textSize="25dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/radius_btnlogin"
+            android:backgroundTint="@color/main_color"
+            android:onClick="logout"
+            android:padding="15dp"
+            android:text="@string/logout"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</LinearLayout>

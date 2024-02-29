@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.InforOrder" >
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/orange"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:navigationIcon="@drawable/ic_arrow_back_white"
+        app:title="Thông tin đặt vé"
+        app:titleMarginStart="60dp"
+        app:titleTextColor="@color/white" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:text="@string/name" />
+
+    <EditText
+        android:id="@+id/edt_hoten"
+        android:background="@drawable/border_edt"
+        android:paddingLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:singleLine="true"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Họ và Tên"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:text="@string/phone" />
+
+    <EditText
+        android:id="@+id/edt_sdt"
+        android:background="@drawable/border_edt"
+        android:paddingLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:singleLine="true"
+        android:maxLength="10"
+        android:hint="Số điện thoại"
+        android:inputType="number"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:text="@string/payMethod" />
+
+    <RadioGroup
+        android:id="@+id/rg_ppthanhtoan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp">
+
+        <RadioButton
+            android:id="@+id/rb_cod"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/cod" />
+
+        <RadioButton
+            android:id="@+id/rb_visa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/visa" />
+    </RadioGroup>
+    <androidx.appcompat.widget.AppCompatButton
+        android:onClick="btn_xacnhan"
+        android:padding="10dp"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:drawableEnd="@drawable/ic_arrow_forward"
+        android:background="@drawable/gradient_btnthanhtoan"
+        android:textSize="17dp"
+        android:text="@string/confirm"/>
+
+</LinearLayout>

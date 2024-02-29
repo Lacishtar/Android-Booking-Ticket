@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbaraddbook"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#E64E07"
+        app:navigationIcon="@drawable/ic_arrow_back_white"
+        app:title="Thêm phim"
+        app:titleMarginStart="95dp"
+        app:titleTextColor="@color/white"></androidx.appcompat.widget.Toolbar>
+    <ScrollView
+        android:layout_weight="9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="7dp"
+                android:text="Tên Phim:"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/edt_movie_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/border_edt"
+                android:hint="Nhập tên sách"
+                android:minHeight="48dp"
+                android:padding="9dp"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="7dp"
+                android:text="Giá Phim:"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/edt_movie_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:singleLine="true"
+                android:background="@drawable/border_edt"
+                android:hint="Nhập giá vé"
+                android:minHeight="48dp"
+                android:padding="9dp"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="7dp"
+                android:text="Tác giả:"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/edt_movie_author"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/border_edt"
+                android:hint="Nhập tác giả"
+                android:singleLine="true"
+                android:minHeight="48dp"
+                android:padding="9dp"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/textView24"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="7dp"
+                android:text="Thể loại:"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <Spinner
+                android:id="@+id/spinner_category"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:contentDescription="@string/app_name"
+                android:minHeight="48dp" />
+
+            <TextView
+                android:id="@+id/textView_time_slot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:padding="7dp"
+                android:text="Chọn khung giờ:" />
+
+            <!-- Time Slot Options -->
+            <CheckBox
+                android:id="@+id/checkBox_9am"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="9:00 AM" />
+
+            <CheckBox
+                android:id="@+id/checkBox_12pm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12:00 PM" />
+
+            <CheckBox
+                android:id="@+id/checkBox_3pm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3:00 PM" />
+
+            <CheckBox
+                android:id="@+id/checkBox_7pm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="7:00 PM" />
+
+            <CheckBox
+                android:id="@+id/checkBox_9pm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="9:00 PM" />
+
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:padding="7dp"
+                android:text="Image 1:" />
+
+            <EditText
+                android:id="@+id/imgMovie1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/border_edt"
+                android:hint="Nhập Image 1"
+                android:singleLine="true"
+                android:minHeight="48dp"
+                android:padding="9dp"
+                android:textSize="20dp" />
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:padding="7dp"
+                android:text="Image 2:" />
+
+            <EditText
+                android:id="@+id/imgMovie2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/border_edt"
+                android:hint="Nhập Image 2"
+                android:minHeight="48dp"
+                android:singleLine="true"
+                android:padding="9dp"
+                android:textSize="20dp" />
+            <TextView
+                android:id="@+id/textView23"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:padding="7dp"
+                android:text="Image 3:" />
+
+            <EditText
+                android:id="@+id/imgMovie3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/border_edt"
+                android:hint="Nhập Image 3"
+                android:singleLine="true"
+                android:minHeight="48dp"
+                android:padding="9dp"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:padding="7dp"
+                android:text="Mô tả:" />
+
+            <EditText
+                android:id="@+id/edt_book_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/border_edt"
+                android:hint="Nhập mô tả"
+                android:minHeight="48dp"
+                android:padding="9dp"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/textView_trailer_link"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:padding="7dp"
+                android:text="Link Trailer:" />
+
+            <EditText
+                android:id="@+id/edt_trailer_link"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/border_edt"
+                android:hint="Nhập link trailer"
+                android:singleLine="true"
+                android:minHeight="48dp"
+                android:padding="9dp" />
+        </LinearLayout>
+    </ScrollView>
+    <Button
+        android:id="@+id/btn_addmovie"
+        android:backgroundTint="@color/orange"
+        android:layout_margin="10dp"
+        app:cornerRadius="12dp"
+        android:layout_weight="0"
+        android:layout_gravity="center_horizontal"
+        android:text="Thêm"
+        android:textSize="17sp"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>
