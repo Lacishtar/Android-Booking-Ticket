@@ -1,4 +1,4 @@
-521H0462 - Nguyen Thach Truong Lac
+Nguyen Thach Truong Lac - 521H0462
 Default admin account is: admin / admin
 User need to import picture into asset folder to upload it to application. Here the path: app\src\main\assets
 User's password need to be between 8 to 32 characters
